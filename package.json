@@ -1,0 +1,15 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "TailwindCSS landing page",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/main.css",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/main.css --watch"
+  },
+  "author": "Amangoua Ange",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}

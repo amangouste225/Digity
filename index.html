@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailwindCSS - Landing Page</title>
+    <link rel="stylesheet" href="./dist/main.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="relative container mx-auto flex p-4 justify-between items-baseline"
+    >
+      <!-- LOGO -->
+      <figure>
+        <img src="./src/img/logo-dark.svg" alt="" />
+      </figure>
+      <!-- MENU ITEMS -->
+      <div class="sub-menu hidden md:flex ">
+        <ul class="flex space-x-6">
+          <li class="uppercase hover:text-brightBlue5">
+            <a href="#">Accueil</a>
+          </li>
+          <li class="uppercase">
+            <a href="#">Travaux</a>
+          </li>
+          <li class="uppercase">
+            <a href="#">Blog</a>
+          </li>
+          <li class="uppercase">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    <!-- BOUTTON -->
+    <a href="#" class="border p-3">On commence un projet</a>
+    </nav>
+  </body>
+</html>
