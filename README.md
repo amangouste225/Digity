@@ -1,3 +1,5 @@
+[![]
+
 ## DIGITY
 
 
@@ -19,6 +21,6 @@
 - https://tailwindcss.com/docs/installation
 
 
-### Find Me
+### Ou vous pouvez me trouver
 
 - LinkedIn: https://www.linkedin.com/in/angethierryamangoua/

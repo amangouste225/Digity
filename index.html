@@ -6,35 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TailwindCSS - Landing Page</title>
     <link rel="stylesheet" href="./dist/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800&family=Raleway:ital,wght@0,500;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- NAVBAR -->
-    <nav
-      class="relative container mx-auto flex p-4 justify-between items-baseline"
-    >
-      <!-- LOGO -->
-      <figure>
-        <img src="./src/img/logo-dark.svg" alt="" />
-      </figure>
-      <!-- MENU ITEMS -->
-      <div class="sub-menu hidden md:flex ">
-        <ul class="flex space-x-6">
-          <li class="uppercase hover:text-brightBlue5">
-            <a href="#">Accueil</a>
-          </li>
-          <li class="uppercase">
-            <a href="#">Travaux</a>
-          </li>
-          <li class="uppercase">
-            <a href="#">Blog</a>
-          </li>
-          <li class="uppercase">
-            <a href="#">Contact</a>
-          </li>
-        </ul>
+    <!-- HERO SECTION -->
+    <section class="bg-hero-pattern relative bg-top">
+      <div class="h-20 shadow-lg shadow-black-500/50">
+        <!-- HEADER -->
+        <nav
+          class="relative container mx-auto flex p-4 justify-between items-center"
+        >
+         <!-- NAVBAR -->
+          <!-- LOGO -->
+          <figure>
+            <img src="./src/img/logo-dark.svg" alt="" />
+          </figure>
+          <!-- MENU ITEMS -->
+          <div class="sub-menu hidden lg:flex space-x-16">
+            <ul
+              class="flex space-x-6 text-newBlack font-display font-semibold text-sm items-center"
+            >
+              <li class="uppercase hover:text-brightBlue5">
+                <a href="#">Notre agence</a>
+              </li>
+              <li class="uppercase">
+                <a href="#">Nos travaux</a>
+              </li>
+              <li class="uppercase">
+                <a href="#">Blog</a>
+              </li>
+              <li class="uppercase">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+            <!-- BOUTTON -->
+            <a href="#" class="btn-primary">On commence un projet</a>
+          </div>
+        </nav>
       </div>
-    <!-- BOUTTON -->
-    <a href="#" class="border p-3">On commence un projet</a>
-    </nav>
+
+      <!-- HERO CONTAINER -->
+      <div class="mx-auto relative block max-w-4xl text-center bg-contain bg-no-repeat mt-10 lg:mt-44 p-5">
+        <h1 class="font-semibold font-display text-4xl xl:text-7xl text-new-black">
+          Nous construisons des produits <br />digitaux utiles
+        </h1>
+        <p class="py-10 font-body text-lg text-darkLight">
+          Nous construisons et créeons de belles applications et sites web
+        </p>
+        <a href="#" class="btn-green">Voir nos travaux</a>
+      </div>
+      <img src="./src/img/hero-img.png" alt="hero" class="w-full block mt-11">
+    </section>
   </body>
 </html>
